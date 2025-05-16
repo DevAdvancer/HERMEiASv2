@@ -169,9 +169,7 @@ const ContactPage = () => {
                 <div className="group bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/30 transition-all duration-300">
                   <h3 className="text-xl font-semibold text-white mb-4">Business Hours</h3>
                   <ul className="space-y-2 text-white/70">
-                    <li>Monday - Friday: 10:00 AM - 10:00 PM</li>
-                    <li>Saturday: 10:00 AM - 2:00 PM</li>
-                    <li>Sunday: Closed</li>
+                    <li>24/7 Available</li>
                   </ul>
                 </div>
               </motion.div>
@@ -194,7 +192,7 @@ const ContactPage = () => {
                     </div>
                   ) : (
                     <form id="form" onSubmit={handleSubmit}>
-                      <input type="hidden" name="access_key" value="48b320fb-f951-46cd-bfbb-dc0cf9a803d5" />
+                      <input type="hidden" name="access_key" value="422436dc-1065-41f7-bea0-9451db50ed4a" />
                       <input type="hidden" name="subject" value="New Contact Form Submission from Website" />
                       <input type="hidden" name="from_name" value="Hermeias Contact Form" />
                       <input type="checkbox" name="botcheck" style={{ display: 'none' }} />

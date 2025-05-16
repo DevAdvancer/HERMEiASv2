@@ -4,7 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import DemoLe from "./pages/DemoLe";
 import ContactPage from "./pages/ContactPage";
 import EnSightsPage from "./pages/EnSightsPage";
-import MyStikoPage from "./pages/MyStikoPage";
+import KAIPage from "./pages/KAIPage";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/DemoLe" element={<DemoLe />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/EnSights" element={<EnSightsPage />} />
-        <Route path="/MyStiko" element={<MyStikoPage />} />
+        <Route path="/KAI" element={<KAIPage />} />
       </Routes>
     </>
   );

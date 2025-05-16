@@ -7,7 +7,7 @@ const Products = () => {
             <div className="max-w-7xl mt-[10vh] mx-auto">
                 <p className="text-3xl md:text-4xl lg:text-5xl mb-10 text-white text-center font-bold motion-blur-in-2xl motion-opacity-in-0 motion-duration-1500 motion-delay-700">OUR PRODUCTS</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch justify-center">
-                    {/* Mystiko */}
+                    {/* KAI */}
                     <motion.div
                         initial={{ opacity: 0, filter: 'blur(20px)' }}
                         whileInView={{
@@ -29,20 +29,18 @@ const Products = () => {
                         <div className="absolute inset-0 bg-gradient-to-br from-indigo-800/0 to-indigo-800/0 group-hover:from-indigo-800/10 group-hover:to-indigo-600/10 transition-all duration-500"></div>
 
                         <div className="w-full px-3 mt-6 mb-4 z-10">
-                            <p className="text-2xl font-medium text-white group-hover:text-white transition-colors duration-300">Mystiko</p>
+                            <p className="text-2xl font-medium text-white group-hover:text-white transition-colors duration-300">KAI</p>
                         </div>
                         <div className="w-full px-3 flex-grow z-10">
                             <p className="text-lg font-normal text-white group-hover:text-white transition-colors duration-300">
-                                A next-generation secure messaging platform that puts your privacy first.
-                                With end-to-end encryption, self-destructing messages, and zero data collection,
-                                Mystiko ensures your conversations remain truly private.
+                                KAI leverages Natural Language Processing (NLP), Predictive Analytics, and Automated Resume Screening along with Deep Learning, Neural Networks, and Context-Aware AI Decision Making to streamline recruitment and provide deep, data-driven insights into candidate selection.
                             </p>
                         </div>
                         <div className="w-full px-3 mt-auto mb-6 z-10">
                             <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-indigo-600/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <div className="w-full">
                                 <a
-                                  href="/Mystiko"
+                                  href="/KAI"
                                   className="relative inline-block w-full sm:w-auto py-2 px-4 text-center font-medium rounded-md overflow-hidden bg-white text-gray-900 transition-colors duration-300 group"
                                 >
                                   <span className="absolute inset-0 bg-indigo-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-out z-0"></span>
