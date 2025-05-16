@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, CheckCircle2, ArrowRight } from "lucide-react";
 
 const BetaSection = () => {
-    const releaseDate = new Date("2025-05-10");
+    const releaseDate = new Date("2025-06-15");
     const today = new Date();
     const daysUntilRelease = Math.ceil((releaseDate - today) / (1000 * 60 * 60 * 24));
 
@@ -52,7 +52,7 @@ const BetaSection = () => {
                                     <span className="text-lg text-white/70">days until release</span>
                                 </div>
                                 <div className="text-white/70 space-y-2">
-                                    <p className="text-base">Release Date: May 10, 2025</p>
+                                    <p className="text-base">Release Date: June 15, 2025</p>
                                     <p className="flex items-center gap-2 text-base">
                                         <Clock className="w-4 h-4" />
                                         <span>12:00 PM IST</span>
