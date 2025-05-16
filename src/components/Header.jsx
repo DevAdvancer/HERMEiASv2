@@ -38,7 +38,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-black/50 backdrop-blur-md border-b border-gray-800/50 py-1.5'
+          ? 'bg-black/50 backdrop-blur-2xl border-b border-white/10 py-1.5'
           : 'bg-transparent py-3'
       }`}
     >
@@ -73,9 +73,9 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button with Lucide icons */}
+        {/* Mobile Menu Button with Lucide icons - Added padding */}
         <button
-          className="lg:hidden text-white transition-transform duration-300 hover:scale-110 focus:outline-none"
+          className="lg:hidden text-white transition-transform duration-300 hover:scale-110 focus:outline-none p-2"
           onClick={toggleNavigation}
           aria-label="Toggle menu"
         >
@@ -83,21 +83,21 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation - Slide down animation */}
+      {/* Mobile Navigation - Centered with no dividing lines */}
       <div
-        className={`lg:hidden bg-black/95 backdrop-blur-md absolute w-full transition-all duration-300 ease-in-out border-b border-gray-800/30 ${
+        className={`lg:hidden bg-black/60 backdrop-blur-2xl absolute w-full transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
       >
-        <div className="container mx-auto px-4 py-2 flex flex-col space-y-1">
+        <div className="container mx-auto px-4 py-6 flex flex-col items-center text-center space-y-3">
           {navigation.map((item, index) => (
             <a
               key={item.id}
               href={item.url}
-              className={`text-sm font-code uppercase py-2 border-b border-gray-800/30 transition-all duration-300
+              className={`text-sm font-code uppercase py-3 w-full transition-all duration-300 tracking-wide
                 ${item.url === pathname.hash
                   ? "text-white"
-                  : "text-gray-400 hover:text-white"
+                  : "text-gray-200 hover:text-white"
                 }
                 ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
               `}
