@@ -42,11 +42,12 @@ const Header = () => {
           : 'bg-transparent py-3'
       }`}
     >
-      <div className="container mx-auto px-4 lg:px-6 xl:px-8 flex justify-between items-center">
-        <div className="flex items-center">
+      <div className="w-full px-4 lg:px-6 xl:px-8 flex justify-between items-center">
+        {/* Left corner - Logo */}
+        <div className="flex-none">
           <a
             href="/"
-            className={`block w-[10rem] transition-opacity duration-300 ${
+            className={`block transition-opacity duration-300 ${
               scrolled ? "opacity-100" : "opacity-90 hover:opacity-100"
             }`}
           >
@@ -54,7 +55,10 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Center - Empty space */}
+        <div className="flex-grow"></div>
+
+        {/* Right corner - Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
           {navigation.map((item) => (
             !item.onlyMobile && (
@@ -73,9 +77,9 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button with Lucide icons - Added padding */}
+        {/* Right corner - Mobile Menu Button */}
         <button
-          className="lg:hidden text-white transition-transform duration-300 hover:scale-110 focus:outline-none p-2"
+          className="lg:hidden flex-none text-white transition-transform duration-300 hover:scale-110 focus:outline-none p-2"
           onClick={toggleNavigation}
           aria-label="Toggle menu"
         >
