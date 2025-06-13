@@ -50,14 +50,20 @@ const DemoLeHero = () => {
       <motion.div style={{ y }} className="relative z-10 h-[90vh]">
         <div className="grid grid-cols-1 md:grid-cols-2 h-full">
           <div className="order-2 md:order-1 flex items-center justify-center max-w-6xl mx-auto space-y-4 md:pl-[7vw] xl:pl-[10vw] px-4">
-            <TextGenerateEffect
-              key={words}
-              words={words}
-              duration={1}
-              delay={0}
-              filter={!isMobile}
-              className="text-center md:text-left text-3xl lg:text-4xl xl:text-6xl font-semibold text-white/90"
-            />
+            {words === "Democratizing Legal Assistance" ? (
+              <h1 className="text-center md:text-left text-3xl lg:text-4xl xl:text-6xl font-semibold text-white/90">
+                {words}
+              </h1>
+            ) : (
+              <TextGenerateEffect
+                key={words}
+                words={words}
+                duration={1}
+                delay={0}
+                filter={!isMobile}
+                className="text-center md:text-left text-3xl lg:text-4xl xl:text-6xl font-semibold text-white/90"
+              />
+            )}
           </div>
           <div className="order-1 md:order-2 h-[80vh] relative">
             {isMobile ? (
