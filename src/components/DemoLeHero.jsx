@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import DemoLePhone from "../design/DemoLePhone";
-import PhoneLeft from "../assets/PhoneLeft.png";
 import { Spotlight } from "../design/Spotlight";
 import { StarsBackground } from "../design/StarsBackground";
 import { ShootingStars } from "../design/ShootingStars";
@@ -45,23 +44,13 @@ const DemoLeHero = () => {
     [0, 0, isMobile ? 0 : -100]
   );
 
-  const y = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, -100]);
-
-
-  return (
-    <div
-      ref={containerRef}
-
-      className="w-full min-h-screen relative overflow-hidden"
-
-      className="w-full min-h-[90vh] relative overflow-hidden"
-
-    >
+            <Canvas className="w-full h-full" dpr={isMobile ? [1, 1] : undefined}>
+              <DemoLePhone shadows scale={0.9} />
+            </Canvas>
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <Spotlight />
+        <StarsBackground />
+        <ShootingStars />
       </div>
-
-      <motion.div style={{ y }} className="relative z-10 h-screen">
 
       <motion.div style={{ y }} className="relative z-10 h-[90vh]">
 
