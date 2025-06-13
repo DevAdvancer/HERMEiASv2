@@ -73,7 +73,7 @@ const DemoLeFeatures = () => {
                             className="group relative h-full"
                         >
                             <div className="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-                            <div className="relative flex flex-col h-full bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300">
+                            <div className="liquid-glass relative flex flex-col h-full rounded-2xl p-8 hover:border-white/20 transition-all duration-300">
                                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6`}>
                                     <feature.icon className="w-6 h-6 text-white" />
                                 </div>

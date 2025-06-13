@@ -70,7 +70,7 @@ const DemoLeProductDescription = () => {
                         className="relative"
                     >
                         <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-3xl" />
-                        <div className="relative bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                        <div className="liquid-glass relative rounded-2xl p-8">
                             <h3 className="text-2xl font-semibold text-white mb-4">Smart Legal Assistant</h3>
                             <p className="text-white/70 mb-6">
                                 Our AI-powered legal assistant understands your needs and provides accurate, context-aware responses. Whether you're drafting documents, analyzing contracts, or seeking legal advice, DemoLe is your 24/7 legal companion.
@@ -114,7 +114,7 @@ const DemoLeProductDescription = () => {
                             className="group relative h-full"
                         >
                             <div className="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
-                            <div className="relative flex flex-col h-full bg-black/50 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300">
+                            <div className="liquid-glass relative flex flex-col h-full rounded-2xl p-8 hover:border-white/20 transition-all duration-300">
                                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6`}>
                                     <feature.icon className="w-6 h-6 text-white" />
                                 </div>
