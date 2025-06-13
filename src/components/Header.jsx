@@ -35,14 +35,12 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-black/50 backdrop-blur-2xl border-b border-white/10 py-1.5'
-          : 'bg-transparent py-3'
-      }`}
-    >
-      <div className="w-full px-4 lg:px-6 xl:px-8 flex justify-between items-center">
+    <header className="fixed inset-x-0 top-4 z-50 flex flex-col items-center px-4">
+      <div
+        className={`w-full max-w-5xl flex justify-between items-center px-4 lg:px-6 xl:px-8 rounded-2xl border border-white/20 shadow-lg transition-all duration-300 ${
+          scrolled ? 'bg-black/60 backdrop-blur-xl py-2' : 'bg-black/40 backdrop-blur-xl py-3'
+        }`}
+      >
         {/* Left corner - Logo */}
         <div className="flex-none">
           <a
@@ -89,7 +87,7 @@ const Header = () => {
 
       {/* Mobile Navigation - Centered with no dividing lines */}
       <div
-        className={`lg:hidden bg-black/60 backdrop-blur-2xl absolute w-full transition-all duration-300 ease-in-out ${
+        className={`lg:hidden absolute left-1/2 top-full mt-2 -translate-x-1/2 w-full max-w-5xl bg-black/60 backdrop-blur-2xl rounded-b-2xl transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
         }`}
       >
