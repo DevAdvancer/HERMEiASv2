@@ -105,3 +105,17 @@ p {
   animation: none !important;
   transition: none !important;
 }
+
+/* Liquid glass morphism effect */
+.liquid-glass {
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+
+/* remove heavy overlay for cleaner glass look */
+.liquid-glass::before {
+  content: none;
+}
