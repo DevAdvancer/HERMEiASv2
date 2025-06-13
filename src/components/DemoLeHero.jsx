@@ -6,6 +6,7 @@ import DemoLePhone from "../design/DemoLePhone";
 import { Spotlight } from "../design/Spotlight";
 import { StarsBackground } from "../design/StarsBackground";
 import { ShootingStars } from "../design/ShootingStars";
+import PhoneLeft from "../assets/PhoneLeft.png";
 import { TextGenerateEffect } from "../design/TextGenerateEffect";
 
 const DemoLeHero = () => {
@@ -69,9 +70,17 @@ const DemoLeHero = () => {
             )}
           </div>
           <div className="order-1 md:order-2 h-[80vh] relative">
-            <Canvas className="w-full h-full" dpr={[1, 1]}>
-              <DemoLePhone shadows scale={0.9} />
-            </Canvas>
+            {isMobile ? (
+              <img
+                src={PhoneLeft}
+                alt="DemoLe App"
+                className="w-full h-full object-contain"
+              />
+            ) : (
+              <Canvas className="w-full h-full" dpr={[1, 1]}>
+                <DemoLePhone shadows scale={0.9} />
+              </Canvas>
+            )}
           </div>
         </div>
       </motion.div>
