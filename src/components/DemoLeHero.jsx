@@ -53,8 +53,9 @@ const DemoLeHero = () => {
             <TextGenerateEffect
               key={words}
               words={words}
-              duration={1.5}
-              delay={0.3}
+              duration={1}
+              delay={0}
+              filter={!isMobile}
               className="text-center md:text-left text-3xl lg:text-4xl xl:text-6xl font-semibold text-white/90"
             />
           </div>
