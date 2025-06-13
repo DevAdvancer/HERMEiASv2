@@ -35,7 +35,7 @@ const Pricing = () => {
                 Recommended for non-Lawyers.
               </p>
               <div className="mt-3">
-                <Button white>Free</Button>
+                <Button white variant="primary">Free</Button>
               </div>
             </div>
           </motion.div>
@@ -66,7 +66,7 @@ const Pricing = () => {
                 Recommended for Individuals.
               </p>
               <div className="mt-3">
-                <Button white>Rs 299</Button>
+                <Button white variant="secondary">Rs 299</Button>
               </div>
             </div>
           </motion.div>
@@ -97,7 +97,7 @@ const Pricing = () => {
                 Recommended for Law-teams.
               </p>
               <div className="mt-3">
-                <Button white>Rs 799</Button>
+                <Button white variant="success">Rs 799</Button>
               </div>
             </div>
           </motion.div>
@@ -128,7 +128,7 @@ const Pricing = () => {
                 Recommended for Law-firms.
               </p>
               <div className="mt-3">
-                <Button white>Rs 1999</Button>
+                <Button white variant="primary">Rs 1999</Button>
               </div>
             </div>
           </motion.div>

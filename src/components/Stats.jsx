@@ -1,24 +1,6 @@
 import { motion } from "framer-motion";
 import { Users, Clock, FileText, Zap } from "lucide-react";
-
-const styleOverrides = `
-  .stats-button {
-    text-decoration: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    color: white !important;
-  }
-
-  .stats-button:hover,
-  .stats-button:focus,
-  .stats-button:active,
-  .stats-button:visited {
-    text-decoration: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    color: white !important;
-  }
-`;
+import Button from "./Button";
 
 const stats = [
     {
@@ -33,8 +15,6 @@ const stats = [
 const Stats = () => {
     return (
         <section className="py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
-            {/* Add style tag to override global link styles */}
-            <style dangerouslySetInnerHTML={{ __html: styleOverrides }} />
 
             {/* Subtle animated background elements that match the theme */}
             <div className="absolute inset-0 z-0">
@@ -115,12 +95,14 @@ const Stats = () => {
                                 <p className="text-white/60">{stat.description}</p>
 
                                 {/* Square button */}
-                                <a
+                                <Button
                                     href="/DemoLe#Beta"
-                                    className="stats-button mt-6 inline-block px-6 py-2.5 bg-white/10 border border-white/20 rounded-none text-white font-medium text-sm hover:bg-white/20 transition-all duration-300"
+                                    className="mt-6 border border-white/20 bg-white/10 rounded-none text-sm font-medium"
+                                    px="px-6 py-2.5"
+                                    variant="secondary"
                                 >
                                     View Project
-                                </a>
+                                </Button>
                             </div>
                         </motion.div>
                     ))}
