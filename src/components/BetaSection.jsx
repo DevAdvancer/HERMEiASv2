@@ -38,7 +38,7 @@ const BetaSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300 relative flex flex-col h-full"
+                        className="group liquid-glass rounded-xl p-6 hover:border-white/30 transition-all duration-300 flex flex-col h-full"
                     >
                         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <div className="relative z-10">
@@ -67,7 +67,7 @@ const BetaSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300 relative flex flex-col h-full"
+                        className="group liquid-glass rounded-xl p-6 hover:border-white/30 transition-all duration-300 flex flex-col h-full"
                     >
                         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <div className="relative z-10">

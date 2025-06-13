@@ -105,3 +105,35 @@ p {
   animation: none !important;
   transition: none !important;
 }
+
+/* Liquid glass morphism effect */
+.liquid-glass {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.25), transparent 60%);
+  animation: liquidGlass 15s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes liquidGlass {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10%, 10%) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
