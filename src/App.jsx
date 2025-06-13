@@ -1,14 +1,17 @@
+import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import DemoLe from "./pages/DemoLe";
-import ContactPage from "./pages/ContactPage";
-import EnSightsPage from "./pages/EnSightsPage";
-import KAIPage from "./pages/KAIPage";
+import Loading from "./components/Loading";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const DemoLe = lazy(() => import("./pages/DemoLe"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const EnSightsPage = lazy(() => import("./pages/EnSightsPage"));
+const KAIPage = lazy(() => import("./pages/KAIPage"));
 
 const App = () => {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -17,7 +20,7 @@ const App = () => {
         <Route path="/EnSights" element={<EnSightsPage />} />
         <Route path="/KAI" element={<KAIPage />} />
       </Routes>
-    </>
+    </Suspense>
   );
 };
 
