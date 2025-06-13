@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import DemoLePhone from "../design/DemoLePhone";
-import PhoneLeft from "../assets/PhoneLeft.png";
 import { Spotlight } from "../design/Spotlight";
 import { StarsBackground } from "../design/StarsBackground";
 import { ShootingStars } from "../design/ShootingStars";
@@ -70,17 +69,9 @@ const DemoLeHero = () => {
             )}
           </div>
           <div className="order-1 md:order-2 h-[80vh] relative">
-            {isMobile ? (
-              <img
-                src={PhoneLeft}
-                alt="DemoLe App"
-                className="w-full h-full object-contain"
-              />
-            ) : (
-              <Canvas className="w-full h-full">
-                <DemoLePhone shadows scale={0.9} />
-              </Canvas>
-            )}
+            <Canvas className="w-full h-full" dpr={[1, 1]}>
+              <DemoLePhone shadows scale={0.9} />
+            </Canvas>
           </div>
         </div>
       </motion.div>
