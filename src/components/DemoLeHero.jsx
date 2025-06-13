@@ -37,17 +37,21 @@ const DemoLeHero = () => {
     });
   }, [scrollYProgress]);
 
-  const y = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, -100]);
+  const y = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [0, 0, isMobile ? 0 : -100]
+  );
 
   return (
     <div
       ref={containerRef}
-      className="w-full min-h-[90vh] relative overflow-hidden"
+      className="w-full min-h-screen relative overflow-hidden"
     >
       <div className="fixed inset-0 z-0 pointer-events-none">
         <Spotlight />
       </div>
-      <motion.div style={{ y }} className="relative z-10 h-[90vh]">
+      <motion.div style={{ y }} className="relative z-10 h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 h-full">
           <div className="order-2 md:order-1 flex items-center justify-center max-w-6xl mx-auto space-y-4 md:pl-[7vw] xl:pl-[10vw] px-4">
             {words === "Democratizing Legal Assistance" ? (
