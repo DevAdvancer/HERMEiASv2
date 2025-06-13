@@ -64,14 +64,7 @@ const DemoLeFeatures = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
                     {features.map((feature, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative h-full"
-                        >
+                        <div key={index} className="group relative h-full">
                             <div className="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-transparent rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
                             <div className="liquid-glass relative flex flex-col h-full rounded-2xl p-8 hover:border-white/20 transition-all duration-300">
                                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6`}>
@@ -80,7 +73,7 @@ const DemoLeFeatures = () => {
                                 <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
                                 <p className="text-white/70 mt-auto">{feature.description}</p>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>
