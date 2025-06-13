@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar, Clock, CheckCircle2, ArrowRight } from "lucide-react";
+import Button from "./Button";
 
 const BetaSection = () => {
     const releaseDate = new Date("2025-06-15");
@@ -103,13 +104,14 @@ const BetaSection = () => {
                                 </li>
                             </ul>
                             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                                <a
-                                    className="w-full sm:w-auto bg-white text-black font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2"
+                                <Button
                                     href="/contact"
+                                    white
+                                    className="w-full sm:w-auto font-semibold flex items-center justify-center gap-2"
                                 >
                                     Request Beta Access
                                     <ArrowRight className="w-4 h-4" />
-                                </a>
+                                </Button>
 
                                 {/* <button className="w-full sm:w-auto border border-white/30 text-white font-semibold py-3 px-6 rounded-lg hover:bg-white/10 transition-colors duration-200 flex items-center justify-center gap-2">
                                     Learn More

@@ -6,10 +6,12 @@ import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import Stats from "../components/Stats";
 import Values from "../components/Values";
+import { StarsBackground } from "../design/StarsBackground";
 
 const HomePage = () => {
     return (
-        <div className="bg-black">
+        <div className="bg-black relative">
+            <StarsBackground className="fixed inset-0 -z-10 pointer-events-none" />
             <main>
                 <Header />
                 <Hero />
