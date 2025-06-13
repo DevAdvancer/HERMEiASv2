@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
 import { Brain, BarChart3, LineChart, Database, Shield, Zap } from 'lucide-react';
+import { StarsBackground } from '../design/StarsBackground';
 
 const features = [
   {
@@ -46,7 +47,8 @@ const features = [
 
 const EnSightsPage = () => {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black relative">
+      <StarsBackground className="fixed inset-0 -z-10 pointer-events-none" />
       <Header />
       <main>
         <Section
