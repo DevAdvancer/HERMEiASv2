@@ -145,7 +145,7 @@ const ContactPage = () => {
                     <div>
                       <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
                       <a href="mailto:contact@hermeias.com" className="text-white/70 hover:text-white transition-colors">
-                        contact@hermeias.com
+                        contact@hermeias.org
                       </a>
                     </div>
                   </div>
