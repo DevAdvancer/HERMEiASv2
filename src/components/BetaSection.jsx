@@ -3,7 +3,7 @@ import { Calendar, Clock, CheckCircle2, ArrowRight } from "lucide-react";
 import Button from "./Button";
 
 const BetaSection = () => {
-    const releaseDate = new Date("2025-06-15");
+    const releaseDate = new Date("2025-07-15"); // Public beta release
     const today = new Date();
     const daysUntilRelease = Math.ceil((releaseDate - today) / (1000 * 60 * 60 * 24));
 
@@ -30,6 +30,9 @@ const BetaSection = () => {
                         <p className="text-lg text-white/70 max-w-2xl mx-auto">
                             Be among the first to experience the future of legal assistance
                         </p>
+                        <p className="text-lg text-white/70 max-w-2xl mx-auto mt-2">
+                            Closed beta is now live. Contact us for access.
+                        </p>
                     </motion.div>
                 </div>
 
@@ -53,7 +56,7 @@ const BetaSection = () => {
                                     <span className="text-lg text-white/70">days until release</span>
                                 </div>
                                 <div className="text-white/70 space-y-2">
-                                    <p className="text-base">Release Date: June 15, 2025</p>
+                                    <p className="text-base">Release Date: July 15, 2025 (Tentative)</p>
                                     <p className="flex items-center gap-2 text-base">
                                         <Clock className="w-4 h-4" />
                                         <span>12:00 PM IST</span>

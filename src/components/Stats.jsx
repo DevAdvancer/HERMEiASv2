@@ -5,8 +5,8 @@ import Button from "./Button";
 const stats = [
     {
         icon: Users,
-        value: "Beta",
-        label: "Testing Upcoming",
+        value: "Closed Beta",
+        label: "Contact us for access",
         description: "Legal professionals using our platform"
     },
     // Commented stats remain available for future use
