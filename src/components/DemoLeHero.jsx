@@ -4,7 +4,6 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import DemoLePhone from "../design/DemoLePhone";
 import { Spotlight } from "../design/Spotlight";
-import { StarsBackground } from "../design/StarsBackground";
 import { ShootingStars } from "../design/ShootingStars";
 
 const DemoLeHero = () => {
@@ -34,7 +33,6 @@ const DemoLeHero = () => {
         </div>
       </div>
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <StarsBackground />
         <ShootingStars />
       </div>
     </div>

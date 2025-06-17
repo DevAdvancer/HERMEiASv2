@@ -1,5 +1,4 @@
 import { Spotlight } from "../design/Spotlight";
-import { StarsBackground } from "../design/StarsBackground";
 import { ShootingStars } from "../design/ShootingStars";
 import { ChevronDown } from "lucide-react";
 
@@ -46,7 +45,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            <StarsBackground />
             <ShootingStars />
         </div>
     );

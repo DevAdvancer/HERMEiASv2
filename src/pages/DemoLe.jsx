@@ -4,12 +4,10 @@ import Footer from "../components/Footer";
 import Pricing from "../components/Pricing";
 import DemoLeProductDescription from "../components/DemoLeProductDescription";
 import BetaSection from "../components/BetaSection";
-import { StarsBackground } from "../design/StarsBackground";
 
 const DemoLe = () => {
     return (
         <div className="relative">
-            <StarsBackground className="fixed inset-0 -z-10 pointer-events-none" />
             <Header />
             <div className="relative">
                 <div className="absolute inset-0 bg-black">

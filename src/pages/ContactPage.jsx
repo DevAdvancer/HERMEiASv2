@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { StarsBackground } from "../design/StarsBackground";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -108,7 +107,6 @@ const ContactPage = () => {
 
   return (
     <div className="relative min-h-screen">
-      <StarsBackground className="fixed inset-0 -z-10 pointer-events-none" />
       <Header />
       <main className="relative z-10">
         <section className="py-24 px-4 sm:px-6 lg:px-8">
