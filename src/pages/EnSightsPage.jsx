@@ -112,7 +112,8 @@ const EnSightsPage = () => {
                   We're currently working on bringing EnSights to life. Our team is developing advanced features to help educational institutions make data-driven decisions.
                 </p>
                 <p className="text-gray-300">
-                  Sign up for our newsletter to stay updated on the launch and get early access to beta testing.
+                  Sign up to be notified when our public beta launches on July 15, 2025.
+                  The closed beta is live now—contact us for access.
                 </p>
               </div>
             </motion.div>
