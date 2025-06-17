@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from 'react';
 const InteractiveStarsBackground = () => {
   const canvasRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const starsRef = useRef([]);
   const animationRef = useRef(null);
 
@@ -12,7 +11,6 @@ const InteractiveStarsBackground = () => {
     const ctx = canvas.getContext('2d');
     const updateDimensions = () => {
       const { innerWidth, innerHeight } = window;
-      setDimensions({ width: innerWidth, height: innerHeight });
       canvas.width = innerWidth;
       canvas.height = innerHeight;
     };

@@ -1,12 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import circleTexture from '../assets/circle.png';
 
 const Stars = () => {
   const group = useRef();
-  const { gl, camera, size } = useThree();
-  const [currentRotation, setCurrentRotation] = useState(new THREE.Vector2());
+  const { gl } = useThree();
+  const currentRotation = useRef(new THREE.Vector2());
   const targetRotation = useRef(new THREE.Vector2());
   const mouse = useRef(new THREE.Vector2()); // Using useRef for persistent mouse coords.
 
@@ -40,19 +40,19 @@ const Stars = () => {
       targetRotation.current.x = mouse.current.y * 0.05;
       targetRotation.current.y = mouse.current.x * 0.05;
 
-      currentRotation.x = THREE.MathUtils.lerp(
-        currentRotation.x,
+      currentRotation.current.x = THREE.MathUtils.lerp(
+        currentRotation.current.x,
         targetRotation.current.x,
         0.1
       );
-      currentRotation.y = THREE.MathUtils.lerp(
-        currentRotation.y,
+      currentRotation.current.y = THREE.MathUtils.lerp(
+        currentRotation.current.y,
         targetRotation.current.y,
         0.1
       );
 
-      group.current.rotation.x = currentRotation.x;
-      group.current.rotation.y = currentRotation.y;
+      group.current.rotation.x = currentRotation.current.x;
+      group.current.rotation.y = currentRotation.current.y;
     }
   });
 

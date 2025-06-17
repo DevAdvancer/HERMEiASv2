@@ -5,9 +5,9 @@ import Button from "./Button";
 const stats = [
     {
         icon: Users,
-        value: "Closed Beta",
-        label: "Contact us for access",
-        description: "Legal professionals using our platform"
+        value: "Closed Beta Live",
+        label: "Request an invite",
+        description: "Join our first legal professionals testing DemoLe"
     },
     // Commented stats remain available for future use
 ];

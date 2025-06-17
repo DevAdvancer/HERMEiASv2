@@ -28,10 +28,11 @@ const BetaSection = () => {
                             Join Our Beta Program
                         </h2>
                         <p className="text-lg text-white/70 max-w-2xl mx-auto">
-                            Be among the first to experience the future of legal assistance
+                            Be among the first to experience the future of legal assistance.
+                            Our closed beta is underway—reach out for an invite.
                         </p>
                         <p className="text-lg text-white/70 max-w-2xl mx-auto mt-2">
-                            Closed beta is now live. Contact us for access.
+                            Public beta opens on July 15, 2025.
                         </p>
                     </motion.div>
                 </div>
