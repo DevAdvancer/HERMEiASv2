@@ -94,16 +94,8 @@ p {
   font-weight: 300;
 }
 
-.disco {
-  all: unset; /* Reset all inherited/previous styles */
-  animation: none !important;
-  transition: none !important;
-}
-
-/* Optional: Remove hover effects */
-.disco:hover {
-  animation: none !important;
-  transition: none !important;
+.glow-hover:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 /* Liquid glass morphism effect */

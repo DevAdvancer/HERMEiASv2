@@ -45,8 +45,7 @@ const Footer = () => {
                         {/* Social Media Icons - Square boxes */}
                         <nav className="flex gap-x-4">
                             <motion.a
-                                whileHover={{ y: -2, scale: 1.05 }}
-                                className="w-8 h-8 flex items-center justify-center rounded-none bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                                className="glow-hover w-8 h-8 flex items-center justify-center rounded-none bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +58,7 @@ const Footer = () => {
                                 </svg>
                             </motion.a>
                             <motion.a
-                                whileHover={{ y: -2, scale: 1.05 }}
-                                className="w-8 h-8 flex items-center justify-center rounded-none bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                                className="glow-hover w-8 h-8 flex items-center justify-center rounded-none bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -73,8 +71,7 @@ const Footer = () => {
                                 </svg>
                             </motion.a>
                             <motion.a
-                                whileHover={{ y: -2, scale: 1.05 }}
-                                className="w-8 h-8 flex items-center justify-center rounded-none bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                                className="glow-hover w-8 h-8 flex items-center justify-center rounded-none bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

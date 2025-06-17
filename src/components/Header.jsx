@@ -45,12 +45,7 @@ const Header = () => {
       >
         {/* Left corner - Logo */}
         <div className="flex-none">
-          <a
-            href="/"
-            className={`block transition-opacity duration-300 ${
-              scrolled ? "opacity-100" : "opacity-90 hover:opacity-100"
-            }`}
-          >
+          <a href="/" className="block opacity-100">
             <h3 className="text-white text-lg font-semibold">HERMEiAS</h3>
           </a>
         </div>

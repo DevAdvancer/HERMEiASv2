@@ -35,10 +35,10 @@ const Hero = () => {
                             e.preventDefault();
                             scrollToProducts();
                         }}
-                        className="flex flex-col items-center text-white/70 hover:text-white/100 transition-all duration-300 animate-pulse"
+                        className="flex flex-col items-center text-white/70 hover:text-white transition-all duration-300"
                         aria-label="Scroll to Products section"
                     >
-                        <span className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs font-bold tracking-widest border border-white/20 hover:bg-white/20 transition-all duration-300 disco">DISCOVER</span>
+                        <span className="glow-hover px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs font-bold tracking-widest border border-white/20 hover:bg-white/20 transition-all duration-300">DISCOVER</span>
                         <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all duration-300 mt-2">
                             <ChevronDown className="w-5 h-5" />
                         </div>
