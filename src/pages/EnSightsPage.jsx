@@ -46,13 +46,12 @@ const features = [
 
 const EnSightsPage = () => {
   return (
-    <div className="min-h-screen bg-black relative">
+    <div className="min-h-screen relative">
       <Header />
       <main>
         <Section
           padding="pt-32 pb-16 md:pt-40 md:pb-24"
-          background="bg-black"
-          overlay
+          background="bg-transparent"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}

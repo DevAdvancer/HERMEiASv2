@@ -5,7 +5,7 @@ import Values from "../components/Values";
 
 const AboutPage = () => {
     return (
-        <div className="relative top-[5rem] bg-black">
+        <div className="relative top-[5rem]">
             <Header />
             <main>
                 <Values />

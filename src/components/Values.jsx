@@ -26,7 +26,7 @@ const values = [
 
 const Values = () => {
     return (
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
+        <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             {/* Subtle background elements that match the original dark theme */}
             <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
 

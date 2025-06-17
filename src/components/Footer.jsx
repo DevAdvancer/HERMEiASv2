@@ -2,7 +2,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative overflow-hidden border-t border-white/10 bg-black text-white py-6 px-4 sm:px-6 lg:px-8">
+        <footer className="relative overflow-hidden border-t border-white/10 text-white py-6 px-4 sm:px-6 lg:px-8">
             {/* Subtle background elements */}
             <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
             <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>

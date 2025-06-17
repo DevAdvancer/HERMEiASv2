@@ -9,7 +9,7 @@ import Values from "../components/Values";
 
 const HomePage = () => {
     return (
-        <div className="bg-black relative">
+        <div className="relative">
             <main>
                 <Header />
                 <Hero />
