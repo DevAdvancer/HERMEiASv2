@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
 import { Brain, FileSearch, Target, Check, Clock, Zap } from 'lucide-react';
-import { StarsBackground } from '../design/StarsBackground';
 
 const features = [
   {
@@ -47,14 +46,12 @@ const features = [
 
 const KAIPage = () => {
   return (
-    <div className="min-h-screen bg-black relative">
-      <StarsBackground className="fixed inset-0 -z-10 pointer-events-none" />
+    <div className="min-h-screen relative">
       <Header />
       <main>
         <Section
           padding="pt-32 pb-16 md:pt-40 md:pb-24"
-          background="bg-black"
-          overlay
+          background="bg-transparent"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}

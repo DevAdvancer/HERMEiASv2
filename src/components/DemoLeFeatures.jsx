@@ -43,7 +43,7 @@ const features = [
 
 const DemoLeFeatures = () => {
     return (
-        <section className="w-full py-24 bg-black relative overflow-hidden">
+        <section className="w-full py-24 relative overflow-hidden">
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
             
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

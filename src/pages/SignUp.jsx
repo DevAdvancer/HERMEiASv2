@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const SignUp = () => {
     return (
-        <div className="min-h-screen bg-black">
+        <div className="min-h-screen">
             <Header />
             <main className="relative z-10">
                 <section className="py-24 px-4 sm:px-6 lg:px-8">

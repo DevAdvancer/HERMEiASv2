@@ -14,7 +14,7 @@ const stats = [
 
 const Stats = () => {
     return (
-        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
+        <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
 
             {/* Subtle animated background elements that match the theme */}
             <div className="absolute inset-0 z-0">

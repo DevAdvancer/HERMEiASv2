@@ -1,5 +1,4 @@
 import { Spotlight } from "../design/Spotlight";
-import { StarsBackground } from "../design/StarsBackground";
 import { ShootingStars } from "../design/ShootingStars";
 import { ChevronDown } from "lucide-react";
 
@@ -17,7 +16,7 @@ const Hero = () => {
                 <Spotlight />
             </div>
 
-            <div id="hero" className="bg-black-4 flex flex-col items-center justify-center min-h-[75vh] xl:min-h-[80vh] px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28 z-10">
+            <div id="hero" className="flex flex-col items-center justify-center min-h-[75vh] xl:min-h-[80vh] px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28 z-10">
                 <div className="relative text-center max-w-7xl mx-auto space-y-3 mb-16">
                     <p className="text-5xl lg:text-6xl xl:text-7xl font-semibold text-white/90 motion-blur-in-2xl motion-opacity-in-0 motion-duration-1500">
                         HERMEiAS
@@ -46,7 +45,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            <StarsBackground />
             <ShootingStars />
         </div>
     );
