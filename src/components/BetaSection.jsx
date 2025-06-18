@@ -116,11 +116,6 @@ const BetaSection = () => {
                                     Request Beta Access
                                     <ArrowRight className="w-4 h-4" />
                                 </Button>
-
-                                {/* <button className="w-full sm:w-auto border border-white/30 text-white font-semibold py-3 px-6 rounded-lg hover:bg-white/10 transition-colors duration-200 flex items-center justify-center gap-2">
-                                    Learn More
-                                    <ArrowRight className="w-4 h-4" />
-                                </button> */}
                             </div>
                         </div>
                     </motion.div>

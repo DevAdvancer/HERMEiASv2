@@ -101,7 +101,7 @@ const Stats = () => {
                                     px="px-6 py-2.5"
                                     variant="secondary"
                                 >
-                                    View Project
+                                    View Product
                                 </Button>
                             </div>
                         </motion.div>
