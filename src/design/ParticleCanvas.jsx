@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
+import WrappedCanvas from '../components/WrappedCanvas';
 import * as THREE from 'three';
 import circleTexture from '../assets/circle.png';
 
@@ -76,12 +77,12 @@ const Stars = () => {
 
 const StarrySky = () => {
   return (
-    <Canvas
+    <WrappedCanvas
       style={{ position: 'absolute', zIndex:0, top: 0, left: 0, width: '100%', height: '100%' }} // Ensure canvas covers hero section
       camera={{ position: [0, 0, 10] }}
     >
       <Stars />
-    </Canvas>
+    </WrappedCanvas>
   );
 };
 

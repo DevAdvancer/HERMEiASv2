@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import withWebglContextHandler from '../components/withWebglContextHandler';
 
-const InteractiveStarsBackground = () => {
+const InteractiveStarsBackground = React.forwardRef((props, ref) => {
   const canvasRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const starsRef = useRef([]);
@@ -124,4 +125,4 @@ const InteractiveStarsBackground = () => {
   );
 };
 
-export default InteractiveStarsBackground;
+export default withWebglContextHandler(InteractiveStarsBackground);

@@ -24,6 +24,7 @@ const DemoLePhone = () => {
     return (
         <>
             <PerspectiveCamera makeDefault fov={45} />
+            
             <Environment preset='city' />
             <Iphone16 />
         </>

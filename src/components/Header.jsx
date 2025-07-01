@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { navigation } from "../constants/index";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import PitchDeckButton from "./PitchDeckButton";
 
 const Header = () => {
   const pathname = useLocation();
@@ -72,6 +73,7 @@ const Header = () => {
                 </a>
               ),
           )}
+          <PitchDeckButton />
         </nav>
 
         {/* Right corner - Mobile Menu Button */}
@@ -116,6 +118,7 @@ const Header = () => {
               {item.title}
             </a>
           ))}
+          <PitchDeckButton />
         </div>
       </div>
     </header>

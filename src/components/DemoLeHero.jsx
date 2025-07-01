@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
+import ErrorBoundary from "../components/ErrorBoundary";
 
 import { Canvas } from "@react-three/fiber";
 import DemoLePhone from "../design/DemoLePhone";
@@ -26,9 +27,13 @@ const DemoLeHero = () => {
             </div>
           </div>
           <div className="order-1 md:order-2 h-[80vh] relative">
-            <Canvas className="w-full h-full">
-              <DemoLePhone shadows scale={0.9} />
-            </Canvas>
+            <ErrorBoundary>
+              <Suspense fallback={<p>Loading 3D model...</p>}>
+                <Canvas className="w-full h-full">
+                  <DemoLePhone shadows scale={0.9} />
+                </Canvas>
+              </Suspense>
+            </ErrorBoundary>
           </div>
         </div>
       </div>
